@@ -1,0 +1,20 @@
+//
+// Pages
+//
+
+.e-pages {
+  display: flex;
+
+  &__page {
+    @include content-center;
+    transition: 0.5s;
+    border: 1px solid $light;
+    @include size(60px);
+
+    @include link-hover {
+      background-color: $primary;
+      color: white;
+      font-weight: $fw-bold;
+    }
+  }
+}

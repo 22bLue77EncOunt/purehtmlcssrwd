@@ -1,0 +1,12 @@
+//
+// btn
+//
+
+@mixin btn-color($bg-c, $text-c: $white) {
+  background-color: $bg-c;
+  color: $text-c;
+  @include link-hover {
+    background-color: darken($bg-c, 15%);
+    color: $text-c;
+  }
+}

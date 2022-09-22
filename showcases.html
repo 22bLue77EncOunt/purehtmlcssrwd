@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Quicksand", sans-serif;
+        list-style: none;
+        text-decoration: none;
+        scroll-behavior: smooth;
+      }
+
+      :root {
+        --bg-color: #020312;
+        --text-color: #fff;
+        --main-color: #eb4a4a;
+        --second-color: gray;
+        --other-color: #12141c;
+        --h1-font: 5.2rem;
+        --h2-font: 3.5rem;
+        --p-font: 1.1rem;
+      }
+
+      body {
+        background-color: var(--second-color);
+      }
+
+      .wrapper {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .main-text {
+        margin-top: 2rem;
+      }
+
+      .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .row img {
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+        border-radius: 0.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .row {
+        padding: 25px;
+        background: #12141c;
+        border-radius: 0.5rem;
+        transition: all 0.4s ease;
+        position: relative;
+      }
+
+      .main-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+      }
+
+      .row h3 {
+        font-size: 25px;
+        font-weight: 700;
+        color: var(--text-color);
+      }
+
+      .row h6 {
+        color: var(--main-color);
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+
+      .row-icon i {
+        font-size: 21px;
+      }
+
+      .row:hover {
+        transform: scale(1.01) translateY(-5px);
+        cursor: pointer;
+      }
+
+      .row a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="portfolio" id="portfolio">
+        <div class="main-text">
+          <h2>純切版作品</h2>
+          <h4>手刻切版</h4>
+        </div>
+
+        <div class="portfolio-content">
+          <div class="row">
+            <a href="./beatslanding/index.html"></a>
+            <img src="./beatslanding/assets/images/specs.png" />
+            <div class="main-row">
+              <div class="row-text">
+                <h6>耳機銷售頁面</h6>
+              </div>
+              <div class="row-icon">
+                <i class="bx bx-heart"></i>
+              </div>
+            </div>
+            <h3>耳機展示首頁</h3>
+          </div>
+
+          <div class="row">
+            <a href="./clothhappy/index.html"></a>
+            <img src="./clothhappy/images/products/f1.jpg" />
+            <div class="main-row">
+              <div class="row-text">
+                <h6>服飾銷售頁面</h6>
+              </div>
+              <div class="row-icon">
+                <i class="bx bx-heart"></i>
+              </div>
+            </div>
+            <h3>衣服購物網站</h3>
+          </div>
+
+          <div class="row">
+            <a href="./douyoubo/index.html"></a>
+            <img src="./douyoubo/images/cook-pic.png" />
+            <div class="main-row">
+              <div class="row-text">
+                <h6>店面銷售頁面</h6>
+              </div>
+              <div class="row-icon">
+                <i class="bx bx-heart"></i>
+              </div>
+            </div>
+            <h3>店面銷售首頁</h3>
+          </div>
+
+          <div class="row">
+            <a href="./EDM/index.html"></a>
+            <img src="./EDM/images/insight.png" />
+            <div class="main-row">
+              <div class="row-text">
+                <h6>email EDM</h6>
+              </div>
+              <div class="row-icon">
+                <i class="bx bx-heart"></i>
+              </div>
+            </div>
+            <h3>Email 頁面</h3>
+          </div>
+
+          <div class="row">
+            <a href="./fruithappy/index.html"></a>
+            <img src="./fruithappy/images/blog-3.jpg" />
+            <div class="main-row">
+              <div class="row-text">
+                <h6>蔬果銷售頁面</h6>
+              </div>
+              <div class="row-icon">
+                <i class="bx bx-heart"></i>
+              </div>
+            </div>
+            <h3>蔬果銷售首頁</h3>
+          </div>
+
+          <div class="row">
+            <a href="./partytravel/index.html"></a>
+            <img src="./partytravel/images/social-pic01.png" />
+            <div class="main-row">
+              <div class="row-text">
+                <h6>舉辦派對頁面</h6>
+              </div>
+              <div class="row-icon">
+                <i class="bx bx-heart"></i>
+              </div>
+            </div>
+            <h3>派對舉辦首頁</h3>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

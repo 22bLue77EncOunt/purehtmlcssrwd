@@ -1,0 +1,97 @@
+//
+//  Form
+//
+
+// variables
+$form__control-height: pxTorem(56px);
+
+.m-form {
+  background-color: $primary;
+  color: white;
+
+  &__content {
+    padding: 0 pxTorem(30px);
+  }
+
+  &__label {
+    display: block;
+    font-size: $fz-m;
+    font-weight: $fw-medium;
+  }
+
+  &__control {
+    width: 100%;
+    background-color: $light;
+    @include content-center;
+    border: 1px solid $light;
+    padding: $spacer-1 $spacer-2;
+    width: 100%;
+    height: $form__control-height;
+    color: $primary;
+    font-weight: $fw-light;
+    &:focus {
+      outline: none;
+    }
+    &::-webkit-input-placeholder {
+      color: $secondary;
+    }
+    &:-moz-placeholder {
+      color: $secondary;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    font-weight: $fw-regular;
+    input[type='checkbox'] {
+      display: none;
+    }
+    input[type='checkbox'] + label {
+      position: relative;
+      padding-right: $spacer-3;
+      cursor: pointer;
+      &::before,
+      &::after {
+        content: '';
+        @include container-center;
+      }
+      &::before {
+        background: #e0e0e0;
+        @include size(pxTorem(16px));
+      }
+      &::after {
+        display: none;
+        @include size(pxTorem(9px));
+        background: $primary;
+      }
+    }
+    input[type='checkbox']:checked + label {
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  &__radios {
+    display: flex;
+
+    input[type='radio'] {
+      display: none;
+    }
+    input[type='radio'] + label {
+      @include content-center;
+      flex: 1;
+      border: 1px solid $light;
+      height: $form__control-height;
+      font-size: $fz-m;
+      font-weight: $fw-medium;
+      cursor: pointer;
+    }
+
+    input[type='radio']:checked + label {
+      background-color: $light;
+      color: $primary;
+    }
+  }
+}

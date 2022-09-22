@@ -1,0 +1,95 @@
+//
+// Text
+//
+
+.h- {
+  // color
+  @each $name, $value in $theme-color {
+    &text-#{$name} {
+      color: $value !important;
+    }
+  }
+
+  // text-align
+  &text-left {
+    text-align: left !important;
+  }
+  &text-right {
+    text-align: right !important;
+  }
+  &text-center {
+    text-align: center !important;
+  }
+
+  // hide-text
+  &hide-text {
+    font-size: 0 !important;
+    color: transparent !important;
+    text-shadow: none !important;
+    background-color: transparent !important;
+    border: 0 !important;
+  }
+
+  // font-size
+
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      &fz#{$infix}-t1 {
+        font-size: $fz-xxl !important;
+      }
+      &fz#{$infix}-t2 {
+        font-size: $fz-xl !important;
+      }
+      &fz#{$infix}-t3 {
+        font-size: $fz-l !important;
+      }
+      &fz#{$infix}-t4 {
+        font-size: $fz-m !important;
+      }
+
+      &fz#{$infix}-s1 {
+        font-size: $fz-s !important;
+      }
+      &fz#{$infix}-s2 {
+        font-size: $fz-es !important;
+      }
+    }
+  }
+
+  // font-weight
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      &fw#{$infix}-thin {
+        font-size: $fw-thin !important;
+      }
+      &fw#{$infix}-extra-light {
+        font-size: $fw-extra-light !important;
+      }
+      &fw#{$infix}-light {
+        font-size: $fw-light !important;
+      }
+      &fw#{$infix}-regular {
+        font-size: $fw-regular !important;
+      }
+      &fw#{$infix}-medium {
+        font-size: $fw-medium !important;
+      }
+      &fw#{$infix}-semi-bold {
+        font-size: $fw-semi-bold !important;
+      }
+      &fw#{$infix}-bold {
+        font-size: $fw-bold !important;
+      }
+      &fw#{$infix}-extra-bold {
+        font-size: $fw-extra-bold !important;
+      }
+      &fw#{$infix}-black {
+        font-size: $fw-black !important;
+      }
+    }
+  }
+}

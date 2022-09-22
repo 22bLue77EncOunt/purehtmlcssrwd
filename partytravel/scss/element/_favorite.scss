@@ -1,0 +1,41 @@
+//
+// favorite
+//
+
+.e-favorite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: index($zIndexs, 'e-favorite');
+
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  input[type='checkbox'] + label {
+    position: relative;
+
+    cursor: pointer;
+  }
+
+  &__like,
+  &__unlike {
+    position: relative;
+    padding: pxTorem(10px);
+  }
+
+  input[type='checkbox'] + label &__like {
+    display: none;
+  }
+  input[type='checkbox'] + label &__unlike {
+    display: block;
+  }
+
+  input[type='checkbox']:checked + label &__like {
+    display: block;
+  }
+
+  input[type='checkbox']:checked + label &__unlike {
+    display: none;
+  }
+}

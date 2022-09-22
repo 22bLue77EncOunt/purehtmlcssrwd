@@ -1,0 +1,29 @@
+//
+// Input number
+//
+
+// variables
+$input-number-size: pxTorem(48px);
+
+.e-input-number {
+  display: flex;
+  align-items: center;
+  &__btn {
+    @include content-center;
+    flex: 1;
+    border: 1px solid $light;
+    width: $input-number-size;
+    height: $input-number-size;
+    @include btn-color(white, $primary);
+    cursor: pointer;
+  }
+
+  &__input {
+    @include content-center;
+    flex: 1;
+    border: 1px solid $light;
+    max-width: pxTorem(48px);
+    height: pxTorem(48px);
+    text-align: center;
+  }
+}

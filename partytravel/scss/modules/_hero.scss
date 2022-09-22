@@ -1,0 +1,59 @@
+// Hero
+.index-banner{
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+}
+.index-banner .row{
+  min-height: 60vh;
+}
+.index-banner .content{
+  font-size: $fz-xxl;
+  color: $primary;
+  p{
+    font-family: $Cabin;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 0.88px;
+    text-transform: uppercase;
+  }
+}
+.index-banner .banner-link{
+ font-size: $fz-s;
+  a{
+    font-family: Roboto;
+    color: $white;
+    font-weight: 100;
+    letter-spacing: 0.09px;
+  }
+  .lang{
+    text-transform:uppercase;
+  }
+}
+
+@media (min-width: 576px) { 
+}
+@media (min-width: 768px) {
+  .index-banner .content{
+    font-size: pxTorem(90px);
+    margin-bottom: pxTorem(50px);
+  }
+  .index-banner .banner-link{
+    margin-bottom: pxTorem(21px);
+  }
+}
+@media (min-width: 992px) { 
+}
+@media (min-width: 1200px) { 
+  .index-banner{
+    min-height: 98vh;
+    .row{
+      min-height: 98vh;
+    }
+    .content{
+      font-size: pxTorem(140px);
+    }
+  }
+}

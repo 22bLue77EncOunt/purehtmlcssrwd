@@ -1,0 +1,37 @@
+//
+// info
+//
+.index-info{
+  img{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .col-6:nth-child(3){
+    position: relative;
+  }
+  .mark-content{
+    color: #fff;
+    position: absolute;
+    font-family: Cabin;
+    font-weight: bold;
+    top: 50%;
+    left: 10px;
+    letter-spacing: 0.15px;
+    transform: translateY(-50%);
+    font-size: $fz-s;
+  }
+}
+
+@media (min-width: 576px) { 
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) { 
+  .index-info .mark-content{
+     font-size: pxTorem(24px);
+  }
+}
+@media (min-width: 1200px) { 
+   
+}

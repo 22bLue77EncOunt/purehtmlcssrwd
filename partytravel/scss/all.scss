@@ -1,0 +1,66 @@
+// vendors
+@import 'vendors/googleFonts';
+
+// utils
+@import 'utils/functions'; 
+@import 'utils/variables'; 
+@import 'utils/mixins';
+
+// config
+@import 'config/reset';
+@import 'config/reboot';
+
+// bootstrap-4-grid
+@import '../node_modules/bootstrap-4-grid/scss/breakpoints/mixins/breakpoints';
+@import '../node_modules/bootstrap-4-grid/scss/grid/bootstrap-grid';
+@import '../node_modules/bootstrap-4-grid/scss/sizing/utilities/sizing';
+@import '../node_modules/bootstrap-4-grid/scss/layout/utilities/spacing';
+@import '../node_modules/bootstrap-4-grid/scss/layout/mixins/visibility';
+@import '../node_modules/bootstrap-4-grid/scss/layout/utilities/visibility';
+//custom
+@import '../scss/utils/variables/bootstrap-grid';
+// @import '../node_modules/bootstrap/scss/mixins/breakpoints';
+// @import '../node_modules/bootstrap/scss/bootstrap-grid';
+// @import '../node_modules/bootstrap/scss/utilities/sizing';
+// @import '../node_modules/bootstrap/scss/utilities/spacing';
+// @import '../node_modules/bootstrap/scss/mixins/visibility';
+// @import '../node_modules/bootstrap/scss/utilities/visibility';
+
+
+// helpers
+// @import 'helpers/b4-grid-customize';
+// @import 'helpers/background';
+// @import 'helpers/break-block';
+// @import 'helpers/border';
+// @import 'helpers/text';
+
+
+// element
+// @import 'element/btn';
+// @import 'element/backtop-btn';
+// @import 'element/image';
+// @import 'element/input-number';
+// @import 'element/title';
+// @import 'element/favorite';
+// @import 'element/form-square';
+// @import 'element/pages';
+// @import 'element/progressbar';
+
+
+// modules
+// @import 'modules/card';
+// @import 'modules/cart';
+// @import 'modules/form';
+@import 'modules/navbar';
+@import 'modules/hero';
+@import 'modules/services';
+@import 'modules/info';
+@import 'modules/records';
+@import 'modules/company';
+@import 'modules/award';
+@import 'modules/picgrid';
+@import 'modules/influence';
+
+// layout
+@import 'layout/footer';
+

@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ccc;
+}
+
+table {
+  border-spacing: 0;
+}
+
+td {
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+.wrapper {
+  width: 100%;
+  table-layout: fixed;
+  background-color: #ccc;
+  padding-bottom: 60px;
+}
+
+.button {
+  background-color: #289dcf;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* -------------------------- */
+
+.main {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  border-spacing: 0;
+  font-family: sans-serif;
+  color: #4a4a4a;
+}
+
+.two-columns {
+  text-align: center;
+  font-size: 0;
+}
+
+.two-columns .column {
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.three-columns {
+  text-align: center;
+  font-size: 0;
+  padding: 35px 0 20px;
+}
+
+.three-columns .column {
+  width: 100%;
+  max-width: 200px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.three-columns .padding {
+  padding: 15px;
+}
+
+.three-columns .content {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.two-columns.last {
+  padding: 35px 0;
+}
+
+.two-columns .padding {
+  padding: 20px;
+}
+
+.two-columns .content {
+  font-size: 15px;
+  line-height: 20px;
+  text-align: left;
+}

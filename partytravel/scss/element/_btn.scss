@@ -1,0 +1,40 @@
+//
+// Button
+//
+
+// variables
+$btn-base-height: pxTorem(65px);
+
+// btn
+.e-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  width: 100%;
+  height: $btn-base-height;
+  line-height: $btn-base-height;
+  text-align: center;
+  font-size: $fz-l;
+  font-weight: $fw-medium;
+  cursor: pointer;
+  @include btn-color($light, $primary);
+
+  // 顏色樣式
+  @each $name, $value in $theme-color {
+    &_#{$name} {
+      @include btn-color($value, $primary);
+    }
+  }
+
+  &_p-checkout-success {
+    width: pxTorem(300px);
+  }
+
+  &_p-login {
+    border: pxTorem(1px) solid $light;
+    height: pxTorem(56px);
+    padding: pxTorem(16px);
+    background-color: white;
+  }
+}

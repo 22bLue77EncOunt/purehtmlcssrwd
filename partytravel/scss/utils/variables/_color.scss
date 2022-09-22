@@ -1,0 +1,25 @@
+// Color
+$primary: #ff556b;
+$secondary: #1100ff;
+$success: rgba(0, 6, 109, 0.7);
+$danger: conic-gradient(from 0.25turn, #ffffff, #ff556b);
+$info: #333333;
+$muted: rgba(129, 26, 39, 0.75);
+$light: rgba(255, 255, 255, 0.8);
+$dark: #999999;
+$brown-grey: #8d8d8d;
+$white: #fff;
+$black: #000;
+
+$theme-color: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'danger': $danger,
+  'info': $info,
+  'muted': $muted,
+  'light': $light,
+  'dark': $dark,
+  'white': $white,
+  'black': $black,
+);

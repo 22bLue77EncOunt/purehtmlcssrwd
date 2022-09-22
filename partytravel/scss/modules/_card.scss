@@ -1,0 +1,60 @@
+//
+// Card
+//
+
+// variables
+$card-bg: white;
+$card__img-height: pxTorem(315px);
+
+// card
+.m-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  background-color: $card-bg;
+
+  // 圖片
+  &__img {
+    @include bg-cover;
+    width: 100%;
+    height: $card__img-height;
+  }
+
+  // 內容
+  &__body {
+    display: flex;
+    align-items: center;
+    border: 1px solid $light;
+  }
+
+  // 標題
+  &__title {
+    border-right: 1px solid $light;
+    padding: pxTorem(13px) 0;
+    text-align: center;
+    font-size: $fz-m;
+    font-weight: $fw-regular;
+  }
+
+  // 價格
+  &__pric {
+    padding: pxTorem(13px) 0;
+    text-align: center;
+    font-family: $Roboto;
+    font-size: $fz-m;
+    font-weight: $fw-medium;
+  }
+
+  // 標籤
+  &__label {
+    position: absolute;
+    top: 0;
+    left: pxTorem(20px);
+    background-color: $primary;
+    padding: pxTorem(16px) pxTorem(10px);
+    writing-mode: vertical-lr;
+    line-height: 1;
+    color: white;
+  }
+}

@@ -1,0 +1,32 @@
+// Font
+// base
+$browser-default-font-size: 16px !default;
+$base-font-size: 1rem;
+$base-line-height: 1.5;
+
+// font-size
+$fz-xxl: $base-font-size * 2.25;
+$fz-xl: $base-font-size * 2;
+$fz-l: $base-font-size * 1.5;
+$fz-m: $base-font-size * 1.25;
+$fz-b: $base-font-size;
+$fz-s: $base-font-size * 0.8;
+$fz-es: $base-font-size * 0.75;
+
+// font-weight
+$fw-thin: 100;
+$fw-extra-light: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+$fw-extra-bold: 800;
+$fw-black: 900;
+
+// google fonts
+$NotoSansTC: 'Noto Sans TC', sans-serif;
+$NotoSerifsTC: 'Noto Serif TC', serif;
+$TimesNewRoman: 'Times New Roman', serif;
+$Roboto: 'Roboto', sans-serif;
+$Cabin: 'Cabin', sans-serif;

@@ -1,0 +1,25 @@
+//
+// Title
+//
+
+.e-title {
+  text-align: center;
+  letter-spacing: 0.25em;
+  line-height: 1;
+  font-family: $NotoSerifsTC;
+  font-weight: $fw-black;
+  > span {
+    display: block;
+    white-space: nowrap;
+    line-height: 2;
+  }
+
+  &_vrl {
+    margin-top: -0.5em;
+    text-align: left;
+    writing-mode: vertical-rl;
+    > span {
+      margin-top: 0.5em;
+    }
+  }
+}

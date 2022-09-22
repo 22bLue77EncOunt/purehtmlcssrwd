@@ -1,0 +1,13 @@
+.h-bd {
+  &-none {
+    border: none !important;
+  }
+
+  &-rounded {
+    border-radius: 50% !important;
+  }
+
+  &-solid-1 {
+    border: 1px solid $light !important;
+  }
+}

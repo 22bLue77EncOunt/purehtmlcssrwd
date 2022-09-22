@@ -1,0 +1,54 @@
+//
+// services
+//
+
+.index-services{
+  .services-item{
+    padding: 20px 0;
+    p{
+      font-size: $fz-s;
+    }
+  }
+  .circle-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid 1px #1100ff;
+    margin-bottom: 10px;
+    .fa{
+      font-size: $fz-xxl;
+      font-weight: $fw-light;
+      color: #ff556b;
+    }
+  }
+}
+
+@media (min-width: 576px) { 
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) { 
+  .index-services{
+    .services-item{
+      padding-top: 82px;
+      padding-bottom: 37px;
+      p{
+        font-size: pxTorem(21px);
+      }
+    }
+    .circle-icon{
+      width: 126px;
+      height: 126px;
+      border-radius: 50%;
+      border: solid 1px #1100ff;
+      margin-bottom: 44px;
+      .fa{
+        font-size: pxTorem(75px);
+        
+      }
+    }
+  }
+}
+@media (min-width: 1200px) { 
+   
+}

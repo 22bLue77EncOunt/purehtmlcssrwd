@@ -1,0 +1,12 @@
+//
+// Background
+//
+
+// background-color
+.h- {
+  @each $name, $value in $theme-color {
+    &bg-#{$name} {
+      background-color: $value !important;
+    }
+  }
+}

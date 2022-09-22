@@ -1,0 +1,13 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    .h-break-block#{$infix} {
+      margin-top: pxTorem(-20px);
+      margin-bottom: pxTorem(-20px);
+    }
+    .h-break-block#{$infix}-n {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+//
+// Form-square
+//
+
+// variables
+$form-square-height: pxTorem(54px);
+
+.e-form-square {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $light;
+  height: $form-square-height;
+
+  &__icon {
+    flex-shrink: 0;
+    flex-basis: $form-square-height;
+    @include content-center;
+    height: 100%;
+    font-size: $fz-m;
+    color: $primary;
+  }
+
+  &__input {
+    flex-grow: 1;
+    background-color: transparent;
+    width: pxTorem(100px);
+    height: 100%;
+    color: $primary;
+    font-weight: $fw-light;
+    &:focus {
+      outline: none;
+    }
+    &::-webkit-input-placeholder {
+      color: $secondary;
+    }
+    &:-moz-placeholder {
+      color: $secondary;
+    }
+  }
+
+  &__button {
+    flex-shrink: 0;
+    flex-basis: $form-square-height;
+    @include content-center;
+    @include btn-color($success, $primary);
+    height: 100%;
+    font-size: $fz-m;
+    cursor: pointer;
+  }
+}

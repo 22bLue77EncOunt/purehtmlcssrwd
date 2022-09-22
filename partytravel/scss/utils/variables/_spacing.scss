@@ -1,0 +1,64 @@
+// Bootstrap-4 spacing
+// Spacing
+$spacer: 1rem !default;
+
+// 小於 $spacer
+$spacer-s1: pxTorem(8px);
+$spacer-s2: pxTorem(4px);
+
+// 大於 $spacer
+$spacer-1: pxTorem(15px);
+$spacer-2: pxTorem(20px);
+$spacer-3: pxTorem(30px);
+$spacer-4: pxTorem(40px);
+$spacer-5: pxTorem(50px);
+$spacer-6: pxTorem(60px);
+$spacer-7: pxTorem(70px);
+$spacer-8: pxTorem(80px);
+$spacer-9: pxTorem(90px);
+$spacer-10: pxTorem(105px);
+
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    s1: (
+      $spacer-s1,
+    ),
+    s2: (
+      $spacer-s2,
+    ),
+    1: (
+      $spacer-1,
+    ),
+    2: (
+      $spacer-2,
+    ),
+    3: (
+      $spacer-3,
+    ),
+    4: (
+      $spacer-4,
+    ),
+    5: (
+      $spacer-5,
+    ),
+    6: (
+      $spacer-6,
+    ),
+    7: (
+      $spacer-7,
+    ),
+    8: (
+      $spacer-8,
+    ),
+    9: (
+      $spacer-9,
+    ),
+    10: (
+      $spacer-10,
+    ),
+  ),
+  $spacers
+);

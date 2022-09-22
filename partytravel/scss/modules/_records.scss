@@ -1,0 +1,44 @@
+.index-records{
+  .records-title{
+    font-size: $fz-b;
+    font-family: Cabin;
+    text-align: center;
+  }
+  .oval{
+    pointer-events: none;
+    position:relative;
+    .spinner-icon{
+      width: 152px;
+      height: 152px;
+      display:block;
+      background-image:conic-gradient(from 0.25turn, #ffffff, #ff556b);
+      border-radius:50%;
+      position: relative;
+    }
+    .num{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      transform: translate(-50%,-50%);
+      font-size: $fz-xxl;
+      font-family: Cabin;
+      font-weight: normal;
+      letter-spacing: 0.3px;
+      color: #ff556b;
+    }
+    .spinner-icon::after {
+      content:'';
+      border-radius:50%;
+      background-color:#FFF; 
+      width:149px; 
+      height:149px; 
+      position:absolute;
+      left:2px; 
+      top:2px;
+    }
+  }
+  p{
+    text-align: center;
+  }
+}

@@ -1,0 +1,91 @@
+//
+// Progressbar
+//
+
+// variables
+$step-size: 20px;
+$step-active-size: $step-size * 0.7;
+
+.e-progressbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    border-top: 1px solid $light;
+    height: 1px;
+  }
+
+  &__step {
+    position: relative;
+    @include content-center;
+    @include size($step-size);
+    z-index: 2;
+    border-radius: 50%;
+    border: 1px solid $light;
+    background-color: $primary;
+    &::before {
+      content: '';
+      @include container-center;
+      @include size($step-active-size);
+      border-radius: 50%;
+    }
+
+    > i {
+      display: none;
+      z-index: 3;
+      color: $primary;
+      font-size: 14px;
+    }
+
+    &_finish,
+    &.is-finish {
+      border: none;
+      background-color: $light;
+      > i {
+        display: block;
+      }
+    }
+
+    &_active,
+    &.is-active {
+      &::before {
+        background-color: $light;
+      }
+    }
+  }
+
+  // 換色
+  &_primary::before {
+    border-top: 1px solid $primary;
+  }
+
+  &_primary &__step {
+    border: 1px solid $primary;
+    background-color: $light;
+    > i {
+      color: $light;
+    }
+    &_finish,
+    &.is-finish {
+      background-color: $primary;
+      > i {
+        color: $light;
+      }
+    }
+    &_active,
+    &.is-active {
+      &::before {
+        background-color: $primary;
+      }
+    }
+  }
+  // 換色 end
+}

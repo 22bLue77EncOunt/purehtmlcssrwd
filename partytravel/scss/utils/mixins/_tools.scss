@@ -1,0 +1,85 @@
+//
+// background
+//
+
+// 背景填滿置中
+@mixin bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+//
+// size
+//
+
+// 尺寸
+@mixin size($w, $h: $w) {
+  width: $w;
+  height: $h;
+}
+
+// 塞滿
+@mixin full {
+  width: 100%;
+  height: 100%;
+}
+
+//
+// link
+//
+
+// 連結樣式
+@mixin link {
+  &:link,
+  &:visited {
+    @content;
+  }
+}
+
+// 被點擊後的樣式
+@mixin link-hover($className: null) {
+  @if ($className != null) {
+    &:focus &#{$className},
+    &:hover &#{$className},
+    &:active &#{$className},
+    &.is-active &#{$className} {
+      @content;
+    }
+  } @else {
+    &:focus,
+    &:hover,
+    &:active,
+    &.is-active {
+      @content;
+    }
+  }
+}
+
+//
+// position
+//
+
+// 容器水平垂直置中 (position: absolute + transform)
+@mixin container-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 內容垂直置中 (display: flex)
+@mixin content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// posa t,r,b,l same
+@mixin posa-full($size) {
+  position: absolute;
+  top: $size;
+  right: $size;
+  bottom: $size;
+  left: $size;
+}

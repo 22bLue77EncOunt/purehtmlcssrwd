@@ -1,0 +1,28 @@
+//
+// Bootstrap-4-grid customize
+//
+
+// 自定義col間距
+// 1. 放在 row
+// 2. 如果 row 父層為 container 需要將水平 padding 設定大於等於間距的一半
+.row {
+  &.h-gutter-s1 {
+    @include gutter($spacer-s1);
+  }
+}
+
+// col negative-margin
+// 1. 放在 col 子層
+// 2. 將 col 兩側間距推回 0 通常用於 col-12 移動裝置版型
+// 3. 如果搭配 "自定義col間距" 使用需使用相同間距 而且container必須完全等於間距的一半
+// 4. 注意: media-breakpoint-down 這邊使用以下 (因為如果使用 up 需用再 none 來取消)
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-down($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .h-col#{$infix}-nm {
+      @include col-nm($grid-gutter-width);
+    }
+  }
+}

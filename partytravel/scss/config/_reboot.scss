@@ -1,0 +1,76 @@
+// Reboot
+// Document
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  transition: 0.5s all;
+  font-size: $browser-default-font-size;
+}
+
+// Body
+body {
+  font-family: $Cabin;
+  font-size: $base-font-size;
+  font-weight: $fw-light;
+  line-height: $base-line-height;
+}
+
+// Headings and paragraphs
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $fw-regular;
+}
+
+h1 {
+  font-size: $fz-xxl;
+}
+h2 {
+  font-size: $fz-xl;
+}
+h3 {
+  font-size: $fz-l;
+}
+h4 {
+  font-size: $fz-m;
+}
+h5 {
+  font-size: $fz-b;
+}
+h6 {
+  font-size: $fz-s;
+}
+
+// Links
+a {
+  text-decoration: none;
+  color: $primary;
+}
+
+// list
+ul {
+  list-style: none;
+}
+
+// img
+img {
+  display: block;
+}
+
+// forms
+input,
+label,
+select,
+button,
+textarea {
+  font-family: $NotoSansTC;
+  border: none;
+  outline: none;
+}

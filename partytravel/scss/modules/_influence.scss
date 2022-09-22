@@ -1,0 +1,39 @@
+.index-influence{
+  .content{
+    font-family: Cabin;
+    font-size: $fz-s;
+    font-weight: normal;
+    line-height: 1.57;
+    letter-spacing: 0.09px;
+  }
+  .influence-title{
+    font-family: Cabin;
+    font-size: $fz-xl;
+    font-weight: bold;
+    letter-spacing: 0.45px;
+    color: #ff556b;
+    position: absolute;
+    z-index: 1;
+    top: -22px;
+    left: 10px;
+  }
+  .social-items{
+    position: relative;
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .index-influence{
+    .col-md-7{
+      padding-top: 72px;
+    }
+    .influence-title{
+      top: 48px;
+      left: 6px;
+    }
+  }
+}

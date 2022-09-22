@@ -1,0 +1,35 @@
+//
+// Backtop-btn
+//
+
+.e-backtop-btn {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  bottom: pxTorem(45px);
+  right: pxTorem(45px);
+  opacity: 0.6;
+  z-index: index($zIndexs, 'e-backtop-btn');
+  transition: 0.5s;
+  @include size(pxTorem(45px));
+  color: white;
+  font-size: $fz-s;
+  cursor: pointer;
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: 0.5s;
+    transform: rotate(45deg);
+    background-color: $primary;
+    @include full;
+  }
+  &:hover {
+    opacity: 1;
+    &::after {
+      transform: rotate(135deg);
+    }
+  }
+}
